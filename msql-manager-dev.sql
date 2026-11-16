@@ -1,3 +1,53 @@
+CREATE database BDD_2
+
+ALTER DATABASE BDD  Modify Name = Peterpan ;  
+GO
+
+--- Je crée ma table Profile avec chp Nom et Prénom
+use BDD
+GO
+create table Profile(Nom varchar(200), prenom varchar(200))
+
+--- Insertion d'une valeur simple dans la table
+
+insert into Profile values('Peter','Pan')
+
+
+insert into Profile values('Peter','Pan2')
+
+--- et si je veux inserer deux lignes 
+insert into Profile values
+('Le roi', 'Lion'),
+('Garnier', 'Clément')
+
+
+SELECT * FROM Profile
+
+--- Création de la table Etudiant avec trois colonne : 
+--- Nom avec varchar(200), Prénom varchar(200) et Âge int.
+USE BDD
+GO
+
+CREATE TABLE etudiant (
+    nom varchar(200),
+	prenom varchar(200),
+	age    int
+);
+
+---Insertion
+INSERT INTO etudiant values
+  ('Marchand', 'Elisabeth', 18)
+
+INSERT INTO etudiant values
+  ('Trouchon', 'Melanie', 16),
+  ('Teslu', 'Sandrine', 18),
+  ('Portail', 'Bruno', 23),
+  ('Virenque', 'Michel', 22)
+
+
+  SELECT * FROM etudiant;
+
+
 USE BDD
 GO
 
